@@ -1,0 +1,418 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.menue {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    box-shadow: 10px 10px 5px #e0e0e0;
+}
+
+.logo {
+    width: 100%;
+    margin-left: 10%;
+}
+
+.logo img {
+    width: 200px;
+    height: 90px;
+}
+
+.titel {
+    width: 30%;
+    font: 18px Arial;
+    color: #2171b4;
+    margin-top: 32px;
+    margin-right: 3%;
+}
+
+.search {
+    display: block;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+.ipt-S {
+    padding: 5px 55px;
+    background: white url("img/find-vector-icon-find-icon-magnifying-glass-icon-search-icon-loupe-icon-png-640_640.png") no-repeat;
+    background-position: right;
+    background-size: 25px;
+    border-style: hidden;
+    outline: none;
+}
+
+.top {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.field {
+    display: flex;
+    background-color: white;
+    margin-top: 20px;
+    margin-left:10%;
+    margin-right: 10%;
+    
+}
+
+.field img {
+    width: 100px;
+    height: 100%;
+    margin-right: 30px;
+}
+
+.image {
+    width: 100px;
+    height: 60px;
+    margin-right: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+.text {
+    margin: 10px 10px;
+    margin-right: 30px;
+}
+
+.firstP {
+    font-weight: bold;
+    font-size: 1vw;
+    margin-bottom: 5px;
+}
+
+.secoundP {
+    font-size: 1vw;
+    color: #b3b3b3;
+}
+
+.secoundP span {
+    color: #2171b4;
+}
+
+.field .icon {
+    background: rgba(255, 255, 255) url(img/img_249365.png) no-repeat;
+    background-size: contain;
+    background-position: 95% 50%;
+    width: 28px;
+    height: 38px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    opacity: 1;
+}
+
+.icon {
+    margin-top: 15px;
+    margin-left: 38%;
+    opacity: 0.5;
+}
+
+.field .window {
+    background: rgba(255, 255, 255) url(img/28609-200.png) no-repeat;
+    background-size: contain;
+    background-position: 95% 50%;
+    width: 28px;
+    height: 38px;
+    cursor: pointer;
+}
+
+
+.field .details {
+    background: rgba(255, 255, 255) url(img/bpfeil.png) no-repeat;
+    background-size: contain;
+    background-position: 95% 50%;
+    width: 28px;
+    height: 38px;
+    cursor: pointer;
+}
+
+.details {
+    margin-top: 15px;
+    margin-left: 5%;
+    opacity: 0.5;
+}
+
+.details:hover {
+    opacity: 1;
+}
+
+.window {
+    margin-top: 15px;
+    margin-left: 5%;
+    opacity: 0.5;
+}
+
+.window:hover {
+    opacity: 1;
+}
+
+
+.popup-box {
+    background-color: white;
+    padding: 40px 60px;
+    padding-top: 15px;
+    border: 1px solid black;
+    width: 500px;
+    max-width: 80%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 10;
+    font-family: arial;
+    resize: both;
+    overflow: auto;
+}
+
+.popup-box.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-img {
+    background-color: white;
+    padding: 40px 60px;
+    padding-top: 15px;
+    border: 1px solid black;
+    width: 500px;
+    max-width: 80%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 10;
+    font-family: arial;
+    resize: both;
+    overflow: auto;
+}
+
+.popup-img img {
+    width: 450px;
+    height: 600px;
+}
+
+.popup-img.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.inner {
+    width: 550px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.logoMod img {
+    width: 150px;
+    height: 75px;
+}
+
+.firstP-pop{
+    font-weight: bold;
+}
+
+.secoundP-pop {
+    margin: 10px 0px;
+    color: #b3b3b3;
+}
+
+.flex-box {
+    display: flex;
+    margin: 30px 0px;
+}
+
+.lImg img {
+    width: 200px;
+    height: 200px;
+    padding: 0px 5px;
+    margin-right: 20px
+}
+
+.rImg {
+    display: flex;
+}
+
+.rImg img {
+    width: 120px;
+    height: 97px;
+    padding: 2px 5px;
+}
+
+.head {
+    color: #2171b4;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+.footer {
+    margin: 30px 0px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+    
+    .logo img {
+    width: 100px;
+    height: 45px;
+}
+
+.titel {
+    font: 12px Arial;
+    margin-top: 6px;
+    margin-right: 5%;
+}
+
+.search {
+    margin-top: 20px;
+}
+
+.ipt-S {
+    padding: 3px 10px;
+    background-size: 15px;
+}
+.image {
+    width: 70px;
+    height: 45px;
+    margin-right: 30px;
+}
+
+
+.text {
+    margin: 5px 0px;
+    margin-right: 0px;
+    font-size: 10px;
+}
+
+.firstP {
+    font-size: 1.5vw;
+}
+
+.secoundP {
+    font-size: 1.2vw;
+}
+
+.field .icon {
+    width: 18px;
+    height: 28px;
+}
+
+.icon {
+    margin-left: 24%;
+    margin-top: 8px;
+}
+.field .window {
+    width: 20px;
+    height: 28px;
+}
+
+.window {
+    margin-top: 8px;
+}
+
+.field .details {
+    display: none;
+}
+
+.popup-box {
+    padding: 20px 40px;
+    width: 300px;
+}
+
+.popup-img {
+    padding: 20px 40px;
+    width: 400px;
+}
+
+.popup-img img {
+    width: 450px;
+    height: 600px;
+}
+
+.inner {
+    width: 400px;
+    height: 400px;
+}
+
+.logoMod img {
+    width: 100px;
+    height: 35px;
+}
+
+.flex-box {
+    margin: 0px 0px;
+}
+
+.lImg img {
+    width: 120px;
+    height: 114px;
+    padding: 0px 3px;
+}
+
+.rImg img {
+    width: 70px;
+    height: 53px;
+    padding: 2px 5px;
+}
+
+.head {
+    margin: 20px 0px;
+    font-size: 12px;
+}
+
+.footer {
+    margin: 30px 0px;
+    font-size: 12px;
+}
+
+p.content {
+    font-size: 11px;
+}
+
+}
+
+
+@media print {
+    .field .details, .search {
+        display: none;
+    }
+    
+    body {
+        background-color: #f5f5f5 !important;
+    }
+    
+    body {-webkit-print-color-adjust: exact;}
+    }
+    @page {
+            size:A4 landscape;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin: 0;
+            -webkit-print-color-adjust: exact;
+        }
